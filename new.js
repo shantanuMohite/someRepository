@@ -12,7 +12,10 @@ adminRouter.get("/:ANo", (request, response)=>
     response.send("You searched for Admin No " + request.params.ANo);
 });
 
-
+adminRouter.get("/:ANo", (request, response)=>
+{
+    response.send("You searched for Admin No " + request.params.ANo);
+});
 adminRouter.post("/", (request, response)=>
 {
     response.send("You inserted ");
